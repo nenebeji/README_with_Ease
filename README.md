@@ -8,6 +8,7 @@
 - [How to Contribute](#how-to-contribute)
 - [Tests](#test)
 - [Questions](#questions)
+- [References](#references)
 - [License](#license)
 
 ## Project Description
@@ -23,5 +24,7 @@
 ## Tests
 
 ## Questions
+
+## References
 
 ## License
