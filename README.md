@@ -18,7 +18,9 @@
 - [Questions](#questions)
   
 - [Reference](#reference)
-  
+
+  - [Walkthrough Video](#walkthrough-video)
+
 - [License](#license)
   
 ## Project Description
@@ -65,7 +67,7 @@ Email: nenebeji@gmail.com
   
 https://github.com/nenebeji/README_with_Ease
 
-### Walkthrough video
+### Walkthrough Video
 
 https://drive.google.com/file/d/1Mtj0wJm1F6UQ4DsiZJpAsh0ZW-GEg5No/view?usp=sharing
   

@@ -96,7 +96,9 @@ ${renderLicenseBadgeLink(license)}
 - [Questions](#questions)
   
 - [Reference](#reference)
-  
+
+  - [Walkthrough Video](#walkthrough-video)
+
 - [License](#license)
   
 ## Project Description
@@ -131,7 +133,7 @@ Email: ${email}
   
 https://github.com/${github}/${githubrepo}
 
-### Walkthrough video
+### Walkthrough Video
 
 ${video}
   
