@@ -1,5 +1,8 @@
 # README with Ease
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+![App Image](/assets/images/READMEPhoto.png)
+
 ## Table of Contents
   
 - [Project Description](#project-description)
@@ -64,7 +67,7 @@ https://github.com/nenebeji/README_with_Ease
   
 ## License
   
-Boost Software License 1.0
+GNU GPL v3
 
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -87,6 +90,6 @@ SOFTWARE.
 
 For more informaation you can click the link below:
 
-https://www.boost.org/LICENSE_1_0.txt
+https://www.gnu.org/licenses/gpl-3.0
 
 Copyright (c) 2022 Oritsegidenene Beji.
