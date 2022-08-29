@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-// TODO: Create an array of questions for user input
+//Array of questions for user input
 const questions = [ 
     {
     type: 'input',
@@ -17,16 +17,19 @@ const questions = [
     type: 'input',
     message: 'Installation instructions',
     name: 'installations',
+    default: 'Run  $ npm install\n  to install inquirer.'
   },
   {
     type: 'input',
     message: 'Usage information',
     name: 'Usage',
+    default: 'Run $node index.js and follow the instructions.'
   },
   {
     type: 'input',
     message: 'Contribution guidelines',
     name: 'contribution',
+    default: ['1. Clone the repo using $ git clone git@github.com:myusername/name of project\n 2. Create a new branch $ git checkout -b your name\n 3. Make Changes and test\n 4. Submit a pull request with description for review\n']
   },
   {
     type: 'input',
@@ -34,10 +37,10 @@ const questions = [
     name: 'test',
   },
   {
-    type: 'checkbox',
+    type: 'list',
     message: 'License',
     name: 'license',
-    choices: ['University of Birmingham', 'W3Schools','Trilogy Education Services']
+    choices: ['APACHE 2.0', 'MIT','GNU GPL 3', 'Boost', 'None']
   },
   {
     type: 'input',
@@ -51,12 +54,56 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
-const writeToFile = (README, data) => {}
 
-// TODO: Create a function to initialize app
-function init() {inquirer.prompt(questions).then((data) => {
+//function to initialize app
+function init() {inquirer.prompt(questions)
+    .then((data) => {
     const {title, description, installations, usage, contribution, test, license, github, email} = data;
+// Readme Template 
+const readme = 
+`# ${title}
+
+## Table of Contents
+- [Project Description](#project-description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#test)
+- [Questions](#questions)
+- [License](#license)
+
+## Project Description
+
+${description}
+
+## Installation
+
+${installations}
+
+## Usage 
+
+${usage}
+
+## How to Contribute
+
+${contribution}
+
+## Tests
+
+${test}
+
+## Questions
+Feel free to contact me for further questions via:
+Github: ${github}
+Email: ${email}
+
+## License
+${license}
+`
+
+//function to write README file
+fs.writeFile ('README.md', readme, (err) =>
+err ? console.error(err) : console.log('Hurray! You have successfully created a README with Ease!'));
 });
 }
 
