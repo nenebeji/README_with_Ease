@@ -19,6 +19,19 @@ const questions = [
   },
   {
     type: 'input',
+    message: 'Please input the image path for the image you want in the readme',
+    name: 'image',
+    default: '/assets/images/READMEPhoto.png',
+    validate: imageinput => {
+      if (imageinput) return true;
+      else 
+      {console.log('Please provide an image path')
+       return false;
+      }
+    },
+  },
+  {
+    type: 'input',
     message: 'What is your fullname? Please input first and last name',
     name: 'fullname',
     default: 'Oritsegidenene Beji',

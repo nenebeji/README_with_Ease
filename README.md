@@ -1,5 +1,5 @@
 # README with Ease
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 ## Table of Contents
   
 - [Project Description](#project-description)
@@ -64,9 +64,8 @@ https://github.com/nenebeji/README_with_Ease
   
 ## License
   
-The MIT License
+Boost Software License 1.0
 
-Copyright (c) 2022 undefined
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -88,4 +87,6 @@ SOFTWARE.
 
 For more informaation you can click the link below:
 
-https://opensource.org/licenses/MIT
+https://www.boost.org/LICENSE_1_0.txt
+
+Copyright (c) 2022 Oritsegidenene Beji.

@@ -48,13 +48,10 @@ const renderLicenseLink = (license) => {
 const renderLicenseSection = (license) => {
   let licensesection = ``
   if(license === 'None') {
-    licensesection = `None
-
-Copyright (c) 2022 ${license.fullname}`;
+    licensesection = `None`;
   }
   else {licensesection = `${license}
 
-Copyright (c) 2022 ${license.fullname}
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -78,9 +75,12 @@ SOFTWARE.`;
 }
 
 // // TODO: Create a function to generate markdown for README
-const generateMarkdown = ({title, fullname, description, installations, usage, contribution, test, license, github, email, githubrepo}) => {
+const generateMarkdown = ({title, image, fullname, description, installations, usage, contribution, test, license, github, email, githubrepo}) => {
   return `# ${title}
 ${renderLicenseBadgeLink(license)}
+
+![App Image](${image})
+
 ## Table of Contents
   
 - [Project Description](#project-description)
@@ -138,6 +138,8 @@ ${renderLicenseSection(license)}
 For more informaation you can click the link below:
 
 ${renderLicenseLink(license)}
+
+Copyright (c) 2022 ${fullname}.
 `;
 };
 
