@@ -56,7 +56,7 @@ https://github.com/${github}/${githubrepo}
 
 ## License
 
-The ${license} license
+${license}
 
 Copyright (c) 2022 Oritsegidenene Beji
 
