@@ -124,7 +124,7 @@ const questions = [
     type: 'list',
     message: 'License',
     name: 'license',
-    choices: ['APACHE 2.0', 'MIT','GNU GPL 3', 'Boost', 'None']
+    choices: ['APACHE 2.0 License', 'The MIT License','GNU GPL v3', 'Boost Software License 1.0', 'None']
   },
   {
     type: 'input',
