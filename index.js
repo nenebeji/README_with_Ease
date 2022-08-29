@@ -19,6 +19,19 @@ const questions = [
   },
   {
     type: 'input',
+    message: 'What is your fullname? Please input first and last name',
+    name: 'fullname',
+    default: 'Oritsegidenene Beji',
+    validate: fullnameinput => {
+      if (fullnameinput) return true;
+      else 
+      {console.log('Please provide a project title')
+       return false;
+      }
+    },
+  },
+  {
+    type: 'input',
     message: 'Please enter your project description',
     name: 'description',
     default: `This application allows the user to create a README.md file with ease by answering questions in each prompt.
