@@ -1,6 +1,48 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const markdowngenerator = require('./utils/generateMarkdown');
 
+// Readme Template 
+const generateREADME = ({title, description, installations, usage, contribution, test, license, github, email}) =>
+`# ${title}
+
+## Table of Contents
+- [Project Description](#project-description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#test)
+- [Questions](#questions)
+- [License](#license)
+
+## Project Description
+
+${description}
+
+## Installation
+
+${installations}
+
+## Usage 
+
+${usage}
+
+## How to Contribute
+
+${contribution}
+
+## Tests
+
+${test}
+
+## Questions
+Feel free to contact me for further questions via:
+Github: ${github}
+Email: ${email}
+
+## License
+${license}
+`
 //Array of questions for user input
 const questions = [ 
     {
@@ -58,53 +100,12 @@ const questions = [
 //function to initialize app
 function init() {inquirer.prompt(questions)
     .then((data) => {
-    const {title, description, installations, usage, contribution, test, license, github, email} = data;
-// Readme Template 
-const readme = 
-`# ${title}
+    const readme = generateREADME(data);
 
-## Table of Contents
-- [Project Description](#project-description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [How to Contribute](#how-to-contribute)
-- [Tests](#test)
-- [Questions](#questions)
-- [License](#license)
-
-## Project Description
-
-${description}
-
-## Installation
-
-${installations}
-
-## Usage 
-
-${usage}
-
-## How to Contribute
-
-${contribution}
-
-## Tests
-
-${test}
-
-## Questions
-Feel free to contact me for further questions via:
-Github: ${github}
-Email: ${email}
-
-## License
-${license}
-`
-
-//function to write README file
-fs.writeFile ('README.md', readme, (err) =>
-err ? console.error(err) : console.log('Hurray! You have successfully created a README with Ease!'));
-});
+ //function to write README file
+ fs.writeFile ('README.md', readme, (err) =>
+ err ? console.error(err) : console.log('Hurray! You have successfully created a README with Ease!'));
+ });
 }
 
 // Function call to initialize app
