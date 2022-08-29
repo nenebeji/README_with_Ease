@@ -45,6 +45,18 @@ const questions = [
   },
   {
     type: 'input',
+    message: 'please input URL for walkthrough video',
+    name: 'video',
+    validate: videoinput => {
+      if (videoinput) return true;
+      else 
+      {console.log('Please provide a video URL')
+       return false;
+      }
+    },
+  },
+  {
+    type: 'input',
     message: 'Please enter your project description',
     name: 'description',
     default: `This application allows the user to create a README.md file with ease by answering questions in each prompt.

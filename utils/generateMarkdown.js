@@ -75,7 +75,7 @@ SOFTWARE.`;
 }
 
 // // TODO: Create a function to generate markdown for README
-const generateMarkdown = ({title, image, fullname, description, installations, usage, contribution, test, license, github, email, githubrepo}) => {
+const generateMarkdown = ({title, image, fullname, video, description, installations, usage, contribution, test, license, github, email, githubrepo}) => {
   return `# ${title}
 ${renderLicenseBadgeLink(license)}
 
