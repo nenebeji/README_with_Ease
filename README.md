@@ -64,6 +64,10 @@ Email: nenebeji@gmail.com
 ## Reference
   
 https://github.com/nenebeji/README_with_Ease
+
+### Walkthrough video
+
+https://drive.google.com/file/d/1Mtj0wJm1F6UQ4DsiZJpAsh0ZW-GEg5No/view?usp=sharing
   
 ## License
   

@@ -130,6 +130,10 @@ Email: ${email}
 ## Reference
   
 https://github.com/${github}/${githubrepo}
+
+### Walkthrough video
+
+${video}
   
 ## License
   
