@@ -59,19 +59,26 @@ const questions = [
     type: 'input',
     message: 'Installation instructions',
     name: 'installations',
-    default: 'Run  $ npm install\n  to install inquirer.'
+    default: `Run  $ npm install  to install inquirer.`
   },
   {
     type: 'input',
     message: 'Usage information',
-    name: 'Usage',
-    default: 'Run $node index.js and follow the instructions.'
+    name: 'usage',
+    default: 'Run $ node index.js and follow the instructions.'
   },
   {
     type: 'input',
     message: 'Contribution guidelines',
     name: 'contribution',
-    default: ['1. Clone the repo using $ git clone git@github.com:myusername/name of project\n 2. Create a new branch $ git checkout -b your name\n 3. Make Changes and test\n 4. Submit a pull request with description for review\n']
+    default: [`
+    1. Clone the repo using $ git clone git@github.com:myusername/name of project
+
+    2. Create a new branch $ git checkout -b your name 
+
+    3. Make Changes and test 
+
+    4. Submit a pull request with description for review`]
   },
   {
     type: 'input',
