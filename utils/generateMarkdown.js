@@ -1,24 +1,32 @@
 // TODO: Create a function that returns a license badge and link based on which license is passed in
+
 // If there is no license, return an empty string
-let licensebadge = {};
+let badge = ``;
 let licensesection = {};
 const renderLicenseBadgeLink = (license) => {
-  if(license === Apache){
-    return licensebadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-  }
-  else if(license === MIT){
-    return licensebadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
-  }
-  else if(license === GNU){
-    return licensebadge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
-  }
-  else if(license === Boost){
-    return  licensebadge = `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
-  }
-  else if(license === None){
-    return licensebadge = {};
+  const {Apache, MIT, GNU, Boost, None} = license
+  for (const choice of license) {
+    choice == MIT ? console.log(true) : console.log(false);
+  
+  //   if(Apache) {
+  //    badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+  //   }
+  //  console.log(badge);
+    // else if(MIT){
+    //   badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+    // }
+    // else if(GNU){
+    //   badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+    // }
+    // else if(Boost){
+    //   badge = `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
+    // }
+    // else if(None){
+    //   badge = ``;
+    // }
   }
 }
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -55,6 +63,7 @@ const renderLicenseSection = (license) => {
 
 // // TODO: Create a function to generate markdown for README
 const generateMarkdown = ({title, description, installations, usage, contribution, test, license, github, email, githubrepo}) => {
+  renderLicenseBadgeLink(license);
   return `# ${title}
 
 ## Table of Contents

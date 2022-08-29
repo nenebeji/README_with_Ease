@@ -1,26 +1,26 @@
 # README with Ease
 
-  ## Table of Contents
+## Table of Contents
   
-  - [Project Description](#project-description)
+- [Project Description](#project-description)
   
-  - [Installation](#installation)
+- [Installation](#installation)
   
-  - [Usage](#usage)
+- [Usage](#usage)
   
-  - [How to Contribute](#how-to-contribute)
+- [How to Contribute](#how-to-contribute)
   
-  - [Tests](#test)
+- [Tests](#test)
   
-  - [Questions](#questions)
+- [Questions](#questions)
   
-  - [Reference](#reference)
+- [Reference](#reference)
   
-  - [License](#license)
+- [License](#license)
   
-  ## Project Description
+## Project Description
   
-  This application allows the user to create a README.md file with ease by answering questions in each prompt.
+This application allows the user to create a README.md file with ease by answering questions in each prompt.
     
 * A user can input the default value given if they are satisfied with it by pressing the enter key to confirm.
 
@@ -28,17 +28,17 @@
 
 * A README.md file is generated with table of contents containing all relevant information according to the user input
   
-  ## Installation
+## Installation
   
-  Run  $ npm install  to install inquirer.
+Run  $ npm install  to install inquirer.
   
-  ## Usage 
+## Usage 
   
-  Run $ node index.js and follow the instructions.
+Run $ node index.js and follow the instructions.
   
-  ## How to Contribute
+## How to Contribute
   
-  1. Clone the repo using $ git clone git@github.com:nenebeji/README_with_Ease
+1. Clone the repo using $ git clone git@github.com:nenebeji/README_with_Ease
 
 2. Create a new branch $ git checkout -b your name 
 
@@ -46,41 +46,42 @@
 
 4. Submit a pull request with description for review
   
-  ## Tests
+## Tests
   
-  Test was run using npm test and console to debug.
+Test was run using npm test and console to debug.
   
-  ## Questions
+## Questions
   
-  Feel free to contact me for further questions via:
-  Github: https://github.com/nenebeji
-  Email: 
+Feel free to contact me for further questions via:
+
+Github: https://github.com/nenebeji
+
+Email: 
   
-  ## Reference
+## Reference
   
-  https://github.com/nenebeji/README_with_Ease
+https://github.com/nenebeji/README_with_Ease
   
-  ## License
+## License
   
-  APACHE 2.0 License
+APACHE 2.0 License
   
-  Copyright (c) 2022 Oritsegidenene Beji
+Copyright (c) 2022 Oritsegidenene Beji
   
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
   
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
   
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
-  
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
