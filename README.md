@@ -1,5 +1,5 @@
 # README with Ease
-
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Table of Contents
   
 - [Project Description](#project-description)
@@ -48,7 +48,7 @@ Run $ node index.js and follow the instructions.
   
 ## Tests
   
-Test was run using npm test and console to debug.
+Tests were run using npm test and console to debug.
   
 ## Questions
   
@@ -56,7 +56,7 @@ Feel free to contact me for further questions via:
 
 Github: https://github.com/nenebeji
 
-Email: 
+Email: nenebeji@gmail.com
   
 ## Reference
   

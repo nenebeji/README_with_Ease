@@ -1,43 +1,57 @@
-// TODO: Create a function that returns a license badge and link based on which license is passed in
-
+// function that returns a license badge 
 // If there is no license, return an empty string
-let badge = ``;
 let licensesection = {};
 const renderLicenseBadgeLink = (license) => {
-  const {Apache, MIT, GNU, Boost, None} = license
-  for (const choice of license) {
-    choice == MIT ? console.log(true) : console.log(false);
-  
-  //   if(Apache) {
-  //    badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-  //   }
-  //  console.log(badge);
-    // else if(MIT){
-    //   badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
-    // }
-    // else if(GNU){
-    //   badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
-    // }
-    // else if(Boost){
-    //   badge = `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
-    // }
-    // else if(None){
-    //   badge = ``;
-    // }
-  }
+  let badge = ``;
+  if(license === 'APACHE 2.0 License') {
+    badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+   }
+   else if(license === 'The MIT License'){
+     badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+   }
+   else if(license === 'GNU GPL v3'){
+     badge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+   }
+   else if(license === 'Boost Software License 1.0'){
+     badge = `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
+   }
+   else {
+     badge = ``;
+   }
+   return badge;
+ 
+}
+// function that returns the license link
+// If there is no license, return an empty string
+const renderLicenseLink = (license) => {
+  let licenseLink = ``;
+  if(license === 'APACHE 2.0 License') {
+    licenseLink = `https://opensource.org/licenses/Apache-2.0`;
+   }
+   else if(license === 'The MIT License'){
+     licenseLink = `https://opensource.org/licenses/MIT`;
+   }
+   else if(license === 'GNU GPL v3'){
+     licenseLink = `https://www.gnu.org/licenses/gpl-3.0`;
+   }
+   else if(license === 'Boost Software License 1.0'){
+     licenseLink = `https://www.boost.org/LICENSE_1_0.txt`;
+   }
+   else {
+     licenseLink = ``;
+   }
+   return licenseLink;
 }
 
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
+//function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = (license) => {
-  // let licensesection = {};
-  if(license === Apache||MIT||GNU||Boost){
-    return licensesection = `
+  let licensesection = ``
+  if(license === 'None') {
+    licensesection = `None`;
+  }
+  else {licensesection = `${license}
+  
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
     in the Software without restriction, including without limitation the rights
@@ -56,16 +70,13 @@ const renderLicenseSection = (license) => {
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.`;
   }
-  else if(license === None){
-    return licensesection = {};
-  };
+  return licensesection;
 }
 
 // // TODO: Create a function to generate markdown for README
 const generateMarkdown = ({title, description, installations, usage, contribution, test, license, github, email, githubrepo}) => {
-  renderLicenseBadgeLink(license);
   return `# ${title}
-
+${renderLicenseBadgeLink(license)}
 ## Table of Contents
   
 - [Project Description](#project-description)
@@ -140,7 +151,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 `;
-}
+};
 
 module.exports =  generateMarkdown
-
