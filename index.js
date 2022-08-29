@@ -3,16 +3,25 @@ const inquirer = require('inquirer');
 const markdowngenerator = require('./utils/generateMarkdown');
 
 // Readme Template 
-const generateREADME = ({title, description, installations, usage, contribution, test, license, github, email}) =>
+const generateREADME = ({title, description, installations, usage, contribution, test, license, github, email, githubrepo}) =>
 `# ${title}
 
 ## Table of Contents
+
 - [Project Description](#project-description)
+
 - [Installation](#installation)
+
 - [Usage](#usage)
+
 - [How to Contribute](#how-to-contribute)
+
 - [Tests](#test)
+
 - [Questions](#questions)
+
+- [Reference](#reference)
+
 - [License](#license)
 
 ## Project Description
@@ -37,7 +46,7 @@ ${test}
 
 ## Questions
 Feel free to contact me for further questions via:
-Github: ${github}
+Github: https://github.com/${github}
 Email: ${email}
 
 ## License
@@ -100,6 +109,12 @@ const questions = [
     type: 'input',
     message: 'What is your contact email?',
     name: 'email',
+  },
+  {
+    type: 'input',
+    message: 'What is the name of the github repository for this project?',
+    name: 'githubrepo',
+    default: 'README_with_Ease',
   },
 ];
 
