@@ -87,7 +87,7 @@ const questions = [
     message: 'Contribution guidelines',
     name: 'contribution',
     default: [`
-    1. Clone the repo using $ git clone git@github.com:myusername/name of project
+    1. Clone the repo using $ git clone git@github.com:nenebeji/README_with_Ease
 
     2. Create a new branch $ git checkout -b your name 
 
