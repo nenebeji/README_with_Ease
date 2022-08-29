@@ -1,6 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const markdowngenerator = require('./utils/generateMarkdown');
+const licensegenerator = require('./utils/generateLicense');
 
 // Readme Template 
 const generateREADME = ({title, description, installations, usage, contribution, test, license, github, email, githubrepo}) =>
