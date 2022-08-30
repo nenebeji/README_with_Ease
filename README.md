@@ -1,5 +1,5 @@
 # README with Ease
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![App Image](/assets/images/READMEPhoto.png)
 
@@ -53,7 +53,7 @@ Run $ node index.js and follow the instructions.
   
 ## Tests
   
-Tests were run using npm test and console to debug.
+Tests were run using npm test and console to debug. Also run node index.js to test
   
 ## Questions
   
@@ -73,7 +73,7 @@ https://drive.google.com/file/d/1Mtj0wJm1F6UQ4DsiZJpAsh0ZW-GEg5No/view?usp=shari
   
 ## License
   
-APACHE 2.0 License
+The MIT License
 
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -96,6 +96,6 @@ SOFTWARE.
 
 For more informaation you can click the link below:
 
-https://opensource.org/licenses/Apache-2.0
+https://opensource.org/licenses/MIT
 
 Copyright (c) 2022 Oritsegidenene Beji.
