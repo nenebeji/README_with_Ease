@@ -1,5 +1,5 @@
 # README with Ease
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![App Image](/assets/images/generator.png)
 
@@ -73,7 +73,7 @@ https://drive.google.com/file/d/1Mtj0wJm1F6UQ4DsiZJpAsh0ZW-GEg5No/view?usp=shari
   
 ## License
   
-GNU GPL v3
+The MIT License
 
   
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -96,6 +96,6 @@ SOFTWARE.
 
 For more informaation you can click the link below:
 
-https://www.gnu.org/licenses/gpl-3.0
+https://opensource.org/licenses/MIT
 
 Copyright (c) 2022 Oritsegidenene Beji.
