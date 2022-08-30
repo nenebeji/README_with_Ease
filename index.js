@@ -123,7 +123,7 @@ const questions = [
     type: 'input',
     message: 'How do you test this application?',
     name: 'test',
-    default: `Tests were run using npm i to test and console to debug.`,
+    default: `Tests were run using npm test and console to debug. Also run node index.js to test`,
     validate: testinput => {
       if (testinput) return true;
       else 
