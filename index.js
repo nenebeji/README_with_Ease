@@ -21,7 +21,7 @@ const questions = [
     type: 'input',
     message: 'Please input the image path for the image you want in the readme',
     name: 'image',
-    default: '/assets/images/READMEPhoto.png',
+    default: '/assets/images/generator.png',
     validate: imageinput => {
       if (imageinput) return true;
       else 
