@@ -1,13 +1,13 @@
 # README with Ease
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![App Image](/assets/images/generator.png)
-
 ## Table of Contents
   
 - [Project Description](#project-description)
   
 - [Installation](#installation)
+
+- [Screenshots](#screenshots)
   
 - [Usage](#usage)
   
@@ -36,6 +36,10 @@ This application allows the user to create a README.md file with ease by answeri
 ## Installation
   
 Run  $ npm install  to install inquirer.
+
+## Screenshots
+
+![App Image](/assets/images/generator.png)
   
 ## Usage 
   
